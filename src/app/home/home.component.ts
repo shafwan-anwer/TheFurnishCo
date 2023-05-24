@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { SafeUrl } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +11,14 @@ import { SafeUrl } from '@angular/platform-browser';
 export class HomeComponent {
 
   imageUrl: SafeUrl;
-  constructor(private sanitizer: DomSanitizer) {
+  constructor(private sanitizer: DomSanitizer, private router: Router) {
 
     this.imageUrl = this.sanitizer.bypassSecurityTrustUrl('assets/homesofa.png');
 
+  }
+
+  redirectToProductDetailPage() {
+    this.router.navigate(['/detail']); // Replace '/product' with the actual route path of your product page
   }
 
 }

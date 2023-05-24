@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FeaturedItemComponent } from './Components/featured-item/featured-item.component';
+import { ProductDetailpageComponent } from './product-detailpage/product-detailpage.component';
+import { MiniNavbarComponent } from './Components/mini-navbar/mini-navbar.component';
 
 
 
@@ -16,7 +18,9 @@ import { FeaturedItemComponent } from './Components/featured-item/featured-item.
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FeaturedItemComponent
+    FeaturedItemComponent,
+    ProductDetailpageComponent,
+    MiniNavbarComponent
   ],
   imports: [
     BrowserModule,
