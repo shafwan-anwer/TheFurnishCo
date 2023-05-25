@@ -8,7 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FeaturedItemComponent } from './Components/featured-item/featured-item.component';
 import { ProductDetailpageComponent } from './product-detailpage/product-detailpage.component';
-import { MiniNavbarComponent } from './Components/mini-navbar/mini-navbar.component';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -20,14 +20,13 @@ import { MiniNavbarComponent } from './Components/mini-navbar/mini-navbar.compon
     NavbarComponent,
     FeaturedItemComponent,
     ProductDetailpageComponent,
-    MiniNavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
