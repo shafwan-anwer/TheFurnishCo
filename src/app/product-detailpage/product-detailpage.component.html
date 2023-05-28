@@ -1,7 +1,24 @@
-<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="10px">
-  <div fxFlex="50%" fxFlex.xs="100%">
+<div fxLayout="row" fxLayout.xs="column">
+
+
+  <div fxFlex="50%" fxFlex.xs="100%" class="image-column" >
     <div class="navbar-left">
       <span class="logo-text">The Furnish.Co</span>
+      <div class="menu-icon">
+        <span class="icon">
+         <i class="material-icons">menu</i>
+        </span>
+      </div>
+    </div>
+    
+    <div class="image-container" fxLayoutAlign="space-evenly center">
+      <img [src]="imageUrl" alt="" class="main-image"/>
+    </div>
+
+    <div fxLayoutAlign="center" >
+      <img [src]="smallImage1" alt="" class="small-image"/>
+      <img [src]="smallImage2" alt="" class="small-image"/>
+      <img [src]="smallImage3" alt="" class="small-image"/>
     </div>
 
   </div>
@@ -10,7 +27,9 @@
 
 
   <div fxFlex="50%" fxFlex.xs="100%" class="detail-column">
-    <div class="navbar-right mx-auto my-auto">
+
+    <nav class="navbar ml-5" fxLayoutAlign="space-evenly center">
+    <div class="navbar-right">
       <ul class="nav-items">
         <li class="nav-item"><a href="#">Home</a></li>
         <li class="nav-item"><a href="#">Furniture</a></li>
@@ -26,17 +45,48 @@
         </span>
       </div>
     </div>
-    <div class="menu-icon">
-      <span class="icon">
-        <i class="material-icons">menu</i>
+   
+  </nav>
+
+  <!--content area-->
+
+  <div class="content-area px-auto" fxLayout="column"  fxLayoutAlign="space-evenly center">
+    <p class="label"><b>PREMIUM CHAIRS</b></p>
+    <h1><b>Drop type cushion chair</b></h1>
+    <div class="rating">
+      <span>
+        <span class="material-symbols-outlined star-icon">star</span>
       </span>
+      <span>8/15. <span style="color: #7f848d">15 Reviews</span></span>
     </div>
-      <span>PREMIUM CHAIRS</span>
-      <h1>Drop type cushion chair</h1>
-      <span class="review-span" fxLayout="row" fxLayoutAlign="center">
-        <mat-icon color="warn" class="star-icon">star</mat-icon>
-        <span class="review-text">8/15. 15 Reviews</span>
-      </span>
+
+    <div class="color-container">
+      <span class="material-symbols-outlined color1">fiber_manual_record</span>
+      <span class="material-symbols-outlined color2">fiber_manual_record</span>
+    </div>
+
+    <p class="description">Premium & comfortable memory form with<br>a strong structure built with teakwood,<br>it feels amazing.</p>
+   
+
+    <h1><b>$265.50</b></h1>
+
+    <div class="quantity-box">
+      <span class="material-symbols-outlined remove mr-1">remove</span>
+      <span>1</span>
+      <span class="material-symbols-outlined add ml-1">add</span>
+    </div>
+
+    <div class="button-container">
+      <button mat-raised-button class="addtocart mr-2">ADD TO CART</button>
+      <button mat-raised-button class="buynow">BUY NOW</button>
+    </div>
+
+
+
+  </div>
+
+
+
   </div>
   
 
