@@ -9,7 +9,9 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FeaturedItemComponent } from './Components/featured-item/featured-item.component';
 import { ProductDetailpageComponent } from './product-detailpage/product-detailpage.component';
 import {MatIconModule} from '@angular/material/icon';
-
+import { ProductPageComponent } from './product-page/product-page.component';
+import {MatChipsModule} from '@angular/material/chips';
+import { RatingComponent } from './Components/rating/rating.component';
 
 
 
@@ -20,13 +22,16 @@ import {MatIconModule} from '@angular/material/icon';
     NavbarComponent,
     FeaturedItemComponent,
     ProductDetailpageComponent,
+    ProductPageComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

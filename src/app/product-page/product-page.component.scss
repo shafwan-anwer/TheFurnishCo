@@ -1,0 +1,92 @@
+.containers{
+    width: 100%;
+    height: 90vh;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.header {
+    font-size: 40px;
+    padding: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.category-title {
+    font-size: 15px;
+}
+
+mat-chip-listbox {
+    margin-top: 30px;
+}
+
+mat-chip-option{
+  padding: 5px;          
+}
+
+.product-column{
+    background-color: white;
+    margin-top: 60px;
+
+    @media screen and (max-width: 768px){
+      margin-top: 160px;
+    }
+}
+
+.content {
+    overflow-y: auto;
+    height: 90vh; /* Adjust the height as needed */
+    margin-top: 2%;
+  }
+  
+  .data-blocks {
+    margin-top: 10px;
+    height: 330px;
+    border-radius: 10px;
+
+  @media screen and (max-width: 610px) {
+    height: 350px;
+  }
+}
+
+.product-card {
+    height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f6f6f6;
+  
+    @media screen and (max-width: 768px) {
+      padding: 10px;
+    }
+  }
+
+    .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .price {
+    color: #555;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  
+  .featured-image {
+    width: 200px;
+    height: auto;
+  }
+
+  .featured-imageL {
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .image-container {
+    height: 80px; /* Adjust this value to control the height of the visible part of the image */
+    display: flex;
+    align-items: flex-end;
+  }
+  
+
