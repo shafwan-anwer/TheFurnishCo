@@ -17,8 +17,8 @@ export class HomeComponent {
 
   }
 
-  redirectToProductDetailPage() {
-    this.router.navigate(['/detail']); // Replace '/product' with the actual route path of your product page
+  redirectToProductPage() {
+    this.router.navigate(['/product']); // Replace '/product' with the actual route path of your product page
   }
 
 }

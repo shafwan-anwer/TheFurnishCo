@@ -12,6 +12,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { ProductPageComponent } from './product-page/product-page.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { RatingComponent } from './Components/rating/rating.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 
@@ -24,6 +26,7 @@ import { RatingComponent } from './Components/rating/rating.component';
     ProductDetailpageComponent,
     ProductPageComponent,
     RatingComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { RatingComponent } from './Components/rating/rating.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
