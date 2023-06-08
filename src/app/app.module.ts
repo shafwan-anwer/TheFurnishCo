@@ -14,6 +14,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import { RatingComponent } from './Components/rating/rating.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 
@@ -27,6 +28,7 @@ import {MatDividerModule} from '@angular/material/divider';
     ProductPageComponent,
     RatingComponent,
     FooterComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,

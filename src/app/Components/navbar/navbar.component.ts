@@ -16,4 +16,7 @@ export class NavbarComponent {
   redirectToHomePage() {
     this.router.navigate(['/']); // Replace '/product' with the actual route path of your product page
   }
+  redirectToContactusPage() {
+    this.router.navigate(['/contact-us']);
+  }
 }

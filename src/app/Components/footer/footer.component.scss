@@ -1,12 +1,19 @@
 .footer {
   background-color: #161618;
-  padding: 30px;
+  padding-top: 16px;
 }
 
 .column1 {
   h1 {
+    font-size: 20px;
     color: #dcdcdc;
     text-align: center;
+    margin-bottom: 4px;
+
+    @media screen and (max-width: 987px)
+    {
+      font-size: 18px;
+    }
   }
 
   ul {
@@ -17,7 +24,16 @@
       color: #5a595c;
       text-decoration: none;
       list-style-type: none;
-      padding: 5px;
+      padding: 4px;
+
+      &:hover {
+          color: #fff;
+      }
+
+      @media screen and (max-width: 987px)
+      {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -34,4 +50,11 @@
   background-color: #161618;
   padding-left: 30px;
   padding-right: 30px;
+
+  .copy-write{
+    @media screen and (max-width: 987)
+    {
+      font-size: 15px;
+    }
+  }
 }
