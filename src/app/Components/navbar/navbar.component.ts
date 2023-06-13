@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  isSearchExpanded: boolean = false;
+  searchQuery: string = '';
 
   constructor(private router: Router) {}
 
@@ -18,5 +20,18 @@ export class NavbarComponent {
   }
   redirectToContactusPage() {
     this.router.navigate(['/contact-us']);
+  }
+
+  toggleSearchBar() {
+    this.isSearchExpanded = !this.isSearchExpanded;
+    if (!this.isSearchExpanded) {
+      this.searchQuery = ''; // Clear the search query when hiding the search bar
+    }
+  }
+
+  search() {
+    // Implement your search functionality here
+    console.log('Performing search with query:', this.searchQuery);
+    // You can replace the console.log statement with your search logic
   }
 }

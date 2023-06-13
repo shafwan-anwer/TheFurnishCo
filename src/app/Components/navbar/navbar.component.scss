@@ -87,3 +87,21 @@
       display: flex;
     }
   }
+
+  .search-bar {
+    display: none;
+  }
+  
+  .search-bar.expanded {
+    display: flex;
+  }
+  
+  .search-bar input {
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+  }
+  

@@ -9,6 +9,10 @@
         <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToProductPage()">Product</a></li>
         <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToContactusPage()">Store</a></li>
       </ul>
+      <div class="search-bar" [ngClass]="{ 'expanded': isSearchExpanded }">
+        <input type="text" placeholder="Search" [(ngModel)]="searchQuery">
+        <button (click)="search()">Search</button>
+      </div>
       <div class="search-cart-icons">
         <span class="icon">
           <i class="material-icons">search</i>

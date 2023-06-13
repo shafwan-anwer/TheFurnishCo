@@ -10,11 +10,12 @@ import { FeaturedItemComponent } from './Components/featured-item/featured-item.
 import { ProductDetailpageComponent } from './product-detailpage/product-detailpage.component';
 import {MatIconModule} from '@angular/material/icon';
 import { ProductPageComponent } from './product-page/product-page.component';
-import {MatChipsModule} from '@angular/material/chips';
+import { MatChipsModule } from '@angular/material/chips';
 import { RatingComponent } from './Components/rating/rating.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -37,7 +38,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     FlexLayoutModule,
     MatIconModule,
     MatChipsModule,
-    MatDividerModule
+    MatDividerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

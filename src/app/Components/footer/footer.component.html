@@ -1,46 +1,24 @@
-<div class="footer" fxLayout="row" fxLayoutAlign="space-evenly">
-
-    <div class="column1" fxLayout="column">
-        <h1>General</h1>
-        <ul>
-            <li>Showroom</li>
-            <li>Contact</li>
-        </ul>
+<div class="footer" fxLayout="column" fxLayoutAlign="space-evenly center">
+    <h1>The Furnish Co.</h1>
+    
+    <div class="footer-item">
+        <ul class="nav-items">
+            <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToHomePage()">Home</a></li>
+            <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToProductPage()">Furniture</a></li>
+            <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToProductPage()">Product</a></li>
+            <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToContactusPage()">Store</a></li>
+          </ul>
     </div>
 
-    <div class="column1" fxLayout="column">
-        <h1>Services</h1>
-        <ul>
-            <li>Download</li>
-            <li>Agents</li>
-            <li>Certivicates</li>
-        </ul>
-    </div>
-
-    <div class="column1" fxLayout="column">
-        <h1>Social Media</h1>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>TikTok</li>
-            <li>Youtube</li>
-        </ul>
-    </div>
-
-    <div class="column1" fxLayout="column">
-        <h1>About</h1>
-        <ul>
-            <li>Company</li>
-            <li>Career</li>
-            <li>Legal</li>
-            <li>Help</li>
-        </ul>
+    <div class="footer-item">
+        <ul class="nav-items">
+            <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToHomePage()"><i class="fab fa-instagram"></i></a></li>
+            <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToProductPage()"><i class="fab fa-whatsapp"></i></a></li>
+            <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToProductPage()"><i class="fab fa-facebook"></i></a></li>
+          </ul>
     </div>
 </div>
 
-<mat-divider class="mat-divider"></mat-divider>
-
-<div fxLayout="row" fxLayoutAlign="space-between center" class="footer-down">
-    <h1>The Furnish Co.</h1>
-    <span class="copy-write">Copyright 2023 - The Furnish Co.</span>
+<div class="rights" fxLayout="row">
+All Rights Reserved - The Furnish Co.
 </div>
