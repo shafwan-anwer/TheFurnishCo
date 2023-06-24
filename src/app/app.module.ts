@@ -16,6 +16,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule } from '@angular/forms';
+import { FloatNavComponent } from './Components/float-nav/float-nav.component';
 
 
 
@@ -30,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     RatingComponent,
     FooterComponent,
     ContactUsComponent,
+    FloatNavComponent,
   ],
   imports: [
     BrowserModule,

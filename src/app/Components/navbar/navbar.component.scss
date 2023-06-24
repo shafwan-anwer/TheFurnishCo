@@ -21,11 +21,6 @@
   .navbar-right {
     display: flex;
     align-items: center;
-
-    @media screen and (max-width: 900px)
-    {
-      display: none;
-    }
   }
 
   .nav-items {
@@ -75,10 +70,6 @@
   }
   
   @media (max-width: 900px) {
-    .navbar-right {
-      display: none;
-    }
-    
     .menu-icon {
       display: block;
     }
