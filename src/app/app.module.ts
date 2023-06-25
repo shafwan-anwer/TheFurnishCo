@@ -17,6 +17,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FormsModule } from '@angular/forms';
 import { FloatNavComponent } from './Components/float-nav/float-nav.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -32,6 +35,7 @@ import { FloatNavComponent } from './Components/float-nav/float-nav.component';
     FooterComponent,
     ContactUsComponent,
     FloatNavComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { FloatNavComponent } from './Components/float-nav/float-nav.component';
     MatIconModule,
     MatChipsModule,
     MatDividerModule,
-    FormsModule
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

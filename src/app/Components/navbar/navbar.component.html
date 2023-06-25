@@ -1,29 +1,31 @@
 <nav class="navbar">
-    <div class="navbar-left">
-        <span class="logo-text">The Furnish.Co</span>
-      </div>
-    <div class="navbar-right mr-5" fxHide.lt-md>
-      <ul class="nav-items">
-        <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToHomePage()">Home</a></li>
-        <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToProductPage()">Furniture</a></li>
-        <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToProductPage()">Product</a></li>
-        <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToContactusPage()">Store</a></li>
-      </ul>
-      <div class="search-bar" [ngClass]="{ 'expanded': isSearchExpanded }">
-        <input type="text" placeholder="Search" [(ngModel)]="searchQuery">
-        <button (click)="search()">Search</button>
-      </div>
-      <div class="search-cart-icons">
-        <span class="icon">
-          <i class="material-icons">search</i>
-        </span>
-        <span class="icon">
-          <i class="material-icons">shopping_cart</i>
-        </span>
-        <span class="material-symbols-outlined">
-          account_circle
-        </span>
-      </div>
+  <div class="navbar-left">
+    <span class="logo-text">The Furnish.Co</span>
+  </div>
+  <div class="navbar-right mr-5" fxHide.lt-md>
+    <ul class="nav-items">
+      <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToPage('')">Home</a></li>
+      <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToPage('/product')">Furniture</a></li>
+      <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToPage('/contact-us')">Store</a></li>
+    </ul>
+
+<!--
+    <mat-form-field appearance="outline" class="search-bar" [ngClass]="{ 'expanded': isSearchExpanded }">
+      <input matInput type="text" placeholder="Search" [(ngModel)]="searchQuery">
+    </mat-form-field>
+-->
+
+
+    <div class="search-cart-icons">
+      <span class="icon" (click)="toggleSearch()">
+        <i class="material-icons">search</i>
+      </span>
+      <span class="icon">
+        <i class="material-icons">shopping_cart</i>
+      </span>
+      <span class="material-symbols-outlined" (click)="redirectToPage('/login')">
+        account_circle
+      </span>
     </div>
-  </nav>
-  
+  </div>
+</nav>

@@ -10,23 +10,16 @@ export class NavbarComponent {
   isSearchExpanded: boolean = false;
   searchQuery: string = '';
 
+
+
   constructor(private router: Router) {}
 
-  redirectToProductPage() {
-    this.router.navigate(['/product']); // Replace '/product' with the actual route path of your product page
-  }
-  redirectToHomePage() {
-    this.router.navigate(['/']); // Replace '/product' with the actual route path of your product page
-  }
-  redirectToContactusPage() {
-    this.router.navigate(['/contact-us']);
+  toggleSearch(): void {
+    this.isSearchExpanded = !this.isSearchExpanded;
   }
 
-  toggleSearchBar() {
-    this.isSearchExpanded = !this.isSearchExpanded;
-    if (!this.isSearchExpanded) {
-      this.searchQuery = ''; // Clear the search query when hiding the search bar
-    }
+  redirectToPage(path: string) {
+    this.router.navigate([path]); // Replace '/product' with the actual route path of your product page
   }
 
   search() {

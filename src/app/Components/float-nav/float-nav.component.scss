@@ -12,22 +12,24 @@ nav {
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    justify-content: space-between;
 }
 
-nav a {
+nav div {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.1rem;
+    text-decoration: none;
 }
 
-nav a:hover {
+nav div:hover {
     background: rgba(0, 0, 0 , 0.2);
 }
 
-nav a.active {
+nav div.active {
     background: #4db5ff;
     color: #1f1f38;
 }

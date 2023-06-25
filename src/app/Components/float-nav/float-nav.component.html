@@ -1,8 +1,8 @@
 <nav fxHide.gt-sm>
-    <a href='#'></a>
-    <a href='#about'></a>
-    <a href='#experience'></a>
-    <a href='#services'></a>
-    <a href='#portfolio'></a>
-    <a href='#contact'></a>
-  </nav>
+  <div (click)="redirectToPage('')"><span class="material-symbols-outlined"> home </span></div>
+  <div (click)="redirectToPage('/product')"><span class="material-symbols-outlined"> chair </span></div>
+  <div (click)="redirectToPage('/contact-us')"><span class="material-symbols-outlined"> storefront </span></div>
+  <div (click)="redirectToPage('/product')"><span class="material-symbols-outlined"> search </span></div>
+  <div (click)="redirectToPage('/product')"><span class="material-symbols-outlined"> shopping_cart </span></div>
+  <div (click)="redirectToPage('/product')"><span class="material-symbols-outlined"> account_circle </span></div>
+</nav>
