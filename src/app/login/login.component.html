@@ -1,6 +1,83 @@
-<div fxLayout="row" fxLayout.sm="column">
 
-    <div fxLayout="column"></div>
-    <div fxLayout="column"></div>
+<div class="container">
+    <app-navbar></app-navbar>
+    <div class="content" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign="space-evenly center">
 
+
+
+        <div fxLayoutAlign="space-evenly center">
+            <mat-tab-group animationDuration="500ms">
+            <mat-tab label="Login">
+            <mat-card fxFlex="auto">
+                <mat-card-header class="centered-header">
+                    <mat-card-title><b>Log In</b></mat-card-title>
+                </mat-card-header>
+                <mat-card-actions>
+                    <form class="login-form">
+
+                            <mat-form-field appearance="outline">
+                                <mat-label>Username</mat-label>
+                                <input matInput placeholder="Username" required>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input matInput placeholder="Password" required>
+                            </mat-form-field>
+
+                            <button mat-raised-button color="primary" class="mb-1">Logn</button>
+                    </form>
+
+                </mat-card-actions>
+
+            </mat-card>
+        </mat-tab>
+
+        <mat-tab label="SignUp">
+            <mat-card fxFlex="auto">
+                <mat-card-header class="centered-header">
+                    <mat-card-title><b>SignUp</b></mat-card-title>
+                </mat-card-header>
+                <mat-card-actions>
+                    <form class="login-form">
+
+                            <mat-form-field appearance="outline">
+                                <mat-label>Username</mat-label>
+                                <input matInput placeholder="Username" required>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input matInput placeholder="Email" required>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input matInput placeholder="Password" required>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline">
+                                <mat-label> Confirm Password</mat-label>
+                                <input matInput placeholder="Confirm Password" required>
+                            </mat-form-field>
+
+                            <button mat-raised-button color="primary" class="mb-1">SignUp</button>
+                    </form>
+
+                </mat-card-actions>
+
+            </mat-card>
+        </mat-tab>
+
+
+
+
+        </mat-tab-group>
+        </div>
+
+
+        <div>
+            <img [src]="imageUrl" class="logo"/>
+        </div>
+
+    </div>
+
+
+    <app-float-nav></app-float-nav>
 </div>

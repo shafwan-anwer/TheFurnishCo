@@ -1,0 +1,51 @@
+.content {
+    display: inline-flex;
+    margin-top: 10%;
+    margin-bottom: 150px;
+
+    @media screen and (max-width: 1200px) {
+        padding-bottom: 100px;
+    }
+}
+
+mat-card {
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.centered-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 350px;
+    height: auto;
+}
+
+.red-letter {
+    color: red;
+}
+
+.meta-card-text{
+    font-size: 85px;
+    font-weight: 700;
+    color: #636363;
+
+    @media screen and (max-width: 1400px) {
+        font-size: 50px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 30px;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 20px;
+    }
+}
+
