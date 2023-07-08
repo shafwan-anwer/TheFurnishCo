@@ -23,6 +23,8 @@ import { LoginComponent } from './login/login.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
+import { CartComponent } from './cart/cart.component';
+import { StoreDataBlockComponent } from './Components/store-data-block/store-data-block.component';
 
 
 
@@ -39,6 +41,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     ContactUsComponent,
     FloatNavComponent,
     LoginComponent,
+    CartComponent,
+    StoreDataBlockComponent,
   ],
   imports: [
     BrowserModule,

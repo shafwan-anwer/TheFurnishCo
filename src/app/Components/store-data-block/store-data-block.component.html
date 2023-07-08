@@ -1,0 +1,21 @@
+<mat-card class="cart-item-card mb-5">
+    <mat-card-content class="card-content">
+      <div class="image-container">
+        <img [src]="imageUrl">
+      </div>
+      <div class="item-details">
+        <span class="item-name">Item Name</span>
+        <span class="item-price">$10.00</span>
+      </div>
+      <div class="quantity-controls">
+        <button mat-icon-button color="primary" (click)="decreaseQuantity()" class="item">
+          <mat-icon>remove</mat-icon>
+        </button>
+        <span class="quantity item">{{ quantity }}</span>
+        <button mat-icon-button color="primary" (click)="increaseQuantity()" class="item">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  

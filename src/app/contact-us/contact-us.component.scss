@@ -34,3 +34,22 @@ app-footer {
 mat-divider{
     width: 80%;
 }
+
+mat-card {
+  text-align: center;
+  justify-content: center;
+  max-width: 90%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.map-container{
+  padding: 30px;
+}
+
+#map{
+  height: 90vh;
+}
+

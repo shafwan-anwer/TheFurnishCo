@@ -5,10 +5,43 @@
     <div fxLayout="row" fxLayoutAlign="center center">
 
 
-        <div fxFlex="70%" fxLayout="column" fxLayoutAlign="center center">
+        <div fxFlex="60%" fxLayoutAlign="center center" class="contact-container">
+
+            <mat-card fxFlex="auto">
+                <mat-card-header class="centered-header mb-4">
+                    <mat-card-title><b>Contact Us</b></mat-card-title>
+                </mat-card-header>
+                <mat-card-actions fxLayoutAlign="space-evenly center">
+                    <form class="contact-form">
+
+                        <mat-form-field appearance="outline">
+                            <mat-label>Name</mat-label>
+                            <input matInput  placeholder="Enter your name">
+                        </mat-form-field>
+                    
+                        <mat-form-field appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input matInput placeholder="Enter your email">
+                        </mat-form-field>
+                    
+                        <mat-form-field appearance="outline">
+                            <mat-label>Message</mat-label>
+                            <textarea matInput  placeholder="Enter your message"></textarea>
+                        </mat-form-field>
+
+                          <button mat-raised-button color="primary" type="submit" class="mb-4">
+                            Submit
+                          </button>
+                    </form>
+
+                </mat-card-actions>
+            </mat-card>
+
         </div>
 
-        <div fxFlex="30%" fxLayout="column" fxLayoutAlign="center">
+
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center" class="map-container">
+            <div id="map" style="height: 80vh; width: 95%;"></div>
         </div>
 
 

@@ -1,0 +1,25 @@
+.cart-header{
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+.scroll-container{
+    padding: 30px;
+}
+
+app-store-data-block{
+    width: 100%;
+}
+
+.bill-column {
+    padding: 30px;
+
+    div{
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+        margin: 10px 0 10px 0;
+    }
+}

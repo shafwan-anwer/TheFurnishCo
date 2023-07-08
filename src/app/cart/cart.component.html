@@ -1,0 +1,42 @@
+<div class="containers">
+    <app-navbar></app-navbar>
+    <h1 class="cart-header">Cart</h1>
+
+    <div fxLayout="row" fxLayout.lt-md="column">
+
+        <div fxFlex="70%" fxLayout="column" fxLayoutAlign="center center" class="scroll-container">
+            <app-store-data-block></app-store-data-block>
+            <app-store-data-block></app-store-data-block>
+            <app-store-data-block></app-store-data-block>
+            <app-store-data-block></app-store-data-block>
+            <app-store-data-block></app-store-data-block>
+        </div>
+
+        <div fxFlex="30%" fxLayout="column" class="bill-column">
+
+                <div>
+                  <span>Subtotal:</span>
+                  <span>$100.00</span>
+                </div>
+                <div>
+                  <span>Delivery:</span>
+                  <span>$10.00</span>
+                </div>
+                <mat-divider></mat-divider>
+                <div>
+                  <h2>Total:</h2>
+                  <h2>$110.00</h2>
+                </div>
+                <button mat-raised-button color="primary" type="button">Checkout</button>
+
+        </div>
+          
+ 
+
+        
+    </div>
+
+</div>
+
+
+
