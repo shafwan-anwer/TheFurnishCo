@@ -83,6 +83,7 @@
     transition: width 0.3s ease-in-out;
     width: 0;
     overflow: hidden;
+    margin-right: 4px;
   }
   
   .search-bar.expanded {
@@ -90,3 +91,21 @@
   }
   
   
+  .search-bar input.mat-input-element {
+    height: 100%; /* Set the input element's height to match the parent's height */
+    border-radius: 40px; /* Adjust the desired border radius value */
+  }
+  
+  .search-input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    width: 200px;
+    box-sizing: border-box;
+  }
+
+  .search-input:focus {
+    border-color: blue;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 255, 0.2);
+  }

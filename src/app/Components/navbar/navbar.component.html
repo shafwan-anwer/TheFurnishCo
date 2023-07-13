@@ -9,11 +9,11 @@
       <li class="nav-item"><a href="javascript:void(0);" (click)="redirectToPage('/contact-us')">Store</a></li>
     </ul>
 
-<!--
-    <mat-form-field appearance="outline" class="search-bar" [ngClass]="{ 'expanded': isSearchExpanded }">
-      <input matInput type="text" placeholder="Search" [(ngModel)]="searchQuery">
-    </mat-form-field>
--->
+
+    <div appearance="outline" class="search-bar" [ngClass]="{ 'expanded': isSearchExpanded }">
+      <input class="search-input" type="text" placeholder="Search" [(ngModel)]="searchQuery">
+    </div>
+
 
 
     <div class="search-cart-icons">
@@ -23,7 +23,7 @@
       <span class="icon" (click)="redirectToPage('/cart')">
         <i class="material-icons">shopping_cart</i>
       </span>
-      <span class="material-symbols-outlined" (click)="redirectToPage('/login')">
+      <span class="material-symbols-outlined" (click)="redirectToPage('/account')">
         account_circle
       </span>
     </div>

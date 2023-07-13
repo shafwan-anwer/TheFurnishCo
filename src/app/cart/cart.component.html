@@ -2,7 +2,7 @@
     <app-navbar></app-navbar>
     <h1 class="cart-header">Cart</h1>
 
-    <div fxLayout="row" fxLayout.lt-md="column">
+    <div fxLayout="row" fxLayout.lt-md="column" class="store-container">
 
         <div fxFlex="70%" fxLayout="column" fxLayoutAlign="center center" class="scroll-container">
             <app-store-data-block></app-store-data-block>
@@ -30,12 +30,11 @@
                 <button mat-raised-button color="primary" type="button">Checkout</button>
 
         </div>
-          
- 
-
+    
         
     </div>
 
+    <app-float-nav></app-float-nav>
 </div>
 
 

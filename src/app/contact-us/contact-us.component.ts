@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-declare const google: any;
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+
 
 
 @Component({
@@ -8,16 +9,13 @@ declare const google: any;
   styleUrls: ['./contact-us.component.scss']
 })
 
-export class ContactUsComponent implements OnInit {
-  constructor() { }
+export class ContactUsComponent {
+  googleMapsUrl = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.89771644062!2d79.9011516!3d6.9828211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259815817ad93%3A0x47929bf4e7212f41!2sSmart%20Shoppers!5e0!3m2!1sen!2slk!4v1689175743670!5m2!1sen!2slk';
 
-  ngOnInit() {
-    // Initialize map
-    const map = new google.maps.Map(document.getElementById('map'), {
-      center: { lat: -34.397, lng: 150.644 }, // Specify the initial center of the map
-      zoom: 8 // Specify the initial zoom level
-    });
+  googleMapsIframe: SafeResourceUrl;
 
-    // Add additional map functionality (e.g., markers, controls) as needed
+  constructor(private domSanitizer: DomSanitizer) {
+    this.googleMapsIframe = this.domSanitizer.bypassSecurityTrustResourceUrl(this.googleMapsUrl);
   }
+
 }

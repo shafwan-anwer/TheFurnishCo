@@ -1,0 +1,64 @@
+<div class="containers">
+    <app-navbar></app-navbar>
+
+    <div fxLayout="row"  fxLayout.sm="column" fxLayout.xs="column">
+
+        <div fxFlex="40%" fxLayout="column" fxLayoutAlign="center center" class="sidebar">
+
+            <div class="detail-box">
+                <div class="user">
+                    <span class="material-symbols-outlined"> account_circle </span>
+                </div>
+                
+                <h1>Shafwan Anwer</h1>
+                <span class="email">shafwan.anwer@gmail.com</span>
+            </div>
+
+            <mat-list>
+                <mat-list-item><span matListItemTitle class="lists">
+                    Personal Information
+                </span></mat-list-item>
+
+                <mat-list-item role="listitem"><span matListItemTitle class="lists">
+                   Billing & Payment
+                </span></mat-list-item>
+                <mat-list-item role="listitem"><span matListItemTitle class="lists">
+                   Order History
+                </span></mat-list-item>
+                <mat-list-item role="listitem"><span matListItemTitle class="lists">
+                    Gift Cards
+                </span></mat-list-item>
+            </mat-list>
+              
+        </div>
+
+
+        <div fxFlex="60%">
+            <h1>Personal Information</h1>
+            <div>Manage your personal information, including phone numbers and email address where you can be contacted</div>
+
+            <div fxLayout="row wrap">
+            <mat-card>
+                <mat-card-content>Name</mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-content>Date of Birth</mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-content>Country Region</mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-content>Language</mat-card-content>
+            </mat-card>
+            <mat-card>
+                <mat-card-content>Contact</mat-card-content>
+            </mat-card>
+            </div> 
+        </div>
+
+
+
+    </div>
+
+    <app-float-nav></app-float-nav>
+</div>

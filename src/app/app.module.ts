@@ -25,6 +25,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import { CartComponent } from './cart/cart.component';
 import { StoreDataBlockComponent } from './Components/store-data-block/store-data-block.component';
+import { AccountComponent } from './account/account.component';
+import {MatListModule} from '@angular/material/list';
 
 
 
@@ -43,6 +45,7 @@ import { StoreDataBlockComponent } from './Components/store-data-block/store-dat
     LoginComponent,
     CartComponent,
     StoreDataBlockComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { StoreDataBlockComponent } from './Components/store-data-block/store-dat
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
