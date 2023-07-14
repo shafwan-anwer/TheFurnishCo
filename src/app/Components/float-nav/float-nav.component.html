@@ -1,8 +1,16 @@
-<nav fxHide.gt-sm>
-  <div (click)="redirectToPage('')"><span class="material-symbols-outlined"> home </span></div>
-  <div (click)="redirectToPage('/product')"><span class="material-symbols-outlined"> chair </span></div>
-  <div (click)="redirectToPage('/contact-us')"><span class="material-symbols-outlined"> storefront </span></div>
-  <div (click)="redirectToPage('/product')"><span class="material-symbols-outlined"> search </span></div>
-  <div (click)="redirectToPage('/cart')"><span class="material-symbols-outlined"> shopping_cart </span></div>
-  <div (click)="redirectToPage('/login')"><span class="material-symbols-outlined"> account_circle </span></div>
+<nav fxHide.gt-sm class="nav-container">
+
+  <div *ngIf="showSearchBar; else menuItems"  class="search-bar">
+      <input class="search-input" type="text" placeholder="Search">
+      <button class="close-button" (click)="closeSearchBar()">&times;</button>
+  </div>
+
+  <ng-template #menuItems>
+    <div (click)="redirectToPage('/home')"><span class="material-symbols-outlined"> home </span></div>
+    <div (click)="redirectToPage('/product')"><span class="material-symbols-outlined"> chair </span></div>
+    <div (click)="redirectToPage('/contact-us')"><span class="material-symbols-outlined"> storefront </span></div>
+    <div (click)="openSearch()"><span class="material-symbols-outlined"> search </span></div>
+    <div (click)="redirectToPage('/cart')"><span class="material-symbols-outlined"> shopping_cart </span></div>
+    <div (click)="redirectToPage('/login')"><span class="material-symbols-outlined"> account_circle </span></div>
+  </ng-template>
 </nav>

@@ -8,8 +8,13 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 
-const routes: Routes = [{
+const routes: Routes = [
+{
   path: '',
+  component: LoginComponent,
+},
+{
+  path: 'home',
   component: HomeComponent,
 },
 {
@@ -23,10 +28,6 @@ const routes: Routes = [{
 {
   path: 'contact-us',
   component: ContactUsComponent,
-},
-{
-  path: 'login',
-  component: LoginComponent,
 },
 {
   path: 'cart',

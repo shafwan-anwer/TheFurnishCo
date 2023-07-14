@@ -27,9 +27,50 @@ nav div {
 
 nav div:hover {
     background: rgba(0, 0, 0 , 0.2);
+
+    &.search-bar{
+        background: transparent;
+    }
 }
 
 nav div.active {
     background: #4db5ff;
     color: #1f1f38;
 }
+
+.search-bar {
+    width: 98%; // Adjust the width as needed
+  }
+  
+  .search-bar input.mat-input-element {
+    height: 100%; /* Set the input element's height to match the parent's height */
+    border-radius: 40px; /* Adjust the desired border radius value */
+  }
+  
+  .search-input {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px;
+    outline: none;
+    width: 98%;
+    box-sizing: border-box;
+    z-index: 9999;
+    color:  black;
+  }
+
+  .search-input::placeholder {
+    color: black;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
